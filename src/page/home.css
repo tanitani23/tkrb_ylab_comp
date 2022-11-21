@@ -1,0 +1,207 @@
+span.sample1 {
+    font-family: serif;
+    color: white;
+    text-align: center;
+}
+span.sample2 {
+    font-family: serif;
+    color: black;
+    font-size: 15pt;
+}
+
+span.sample3 {
+    font-family: serif;
+    color: #b94047;
+    font-size: 20pt;
+    text-align: center;
+
+}
+
+span.sample4 {
+    font-family: serif;
+    color: black;
+    font-size: 15pt;
+    text-align: center;
+}
+
+
+
+.background1{
+    width: auto;
+    margin: -10px;
+    padding: 5px;
+    background-color:#b94047;
+
+}
+
+.background1 p{
+    font-family: serif;
+    color: white;
+    font-size: 25pt;
+    font-weight: bold;
+
+}
+
+.background2{
+    width: auto;
+    margin: -10px;
+    padding: 0px;
+    background-color:rgba(247,235,152,0.5);;
+
+}
+
+.background2 p{
+    font-family: serif;
+    color: #b94047;
+    font-size: 25pt;
+    font-weight: bold;
+
+}
+
+.example1{
+    width: 100%;
+    height: 300px;
+    margin: 10px 0px 0px 0px; 
+    padding: 0px;
+    object-fit: cover;
+}
+
+.example {
+    position: relative;
+    }
+  
+.example p {
+        white-space: nowrap;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        margin:0;
+        padding:0;
+        color: black;/*文字を黒に*/
+        background: rgba(247,235,152,0.9);/*背景色*/
+        font-size: xx-large;
+        /*文字の装飾は省略*/
+    }
+ 
+  
+.example img {
+    width: 100%;
+    height: 630px;
+    margin: 10px 0px 0px 0px; 
+    padding: 0px;
+    object-fit: cover;
+    }
+
+    .centerImg {
+        font-size:0;
+        margin-bottom:15px;
+        text-align:center;
+        }
+        .centerImg > * {
+          width:49%;
+          margin-bottom:15px;
+          margin-left:2%;
+          display:inline-block;
+          font-size:12px;
+        }
+        .centerImg > *:nth-child(2n + 1) {
+          margin-left:0;
+        }
+        .centerImg img {
+          max-width:100%;
+        }
+  
+        .container{
+          width:100%;
+          height:40px;
+          position: relative;
+      }
+      .centerImg p{
+        font-size: 15pt;
+        font-family: serif;
+
+      }
+
+    .dken {
+        text-align: center;
+    }
+
+    .youtube{
+
+    }
+
+    
+
+    .baseball_akira{
+        width: 100%;
+        opacity: 0;
+        margin-left: 50%;
+        transform: translateX(-100%);
+        opacity: 0;
+        animation: slide-in-anim 6.5s ease-out forwards;
+        position: absolute;
+        top: 10.5%;
+      }
+
+      /***トップへ戻るボタン***/
+#page-top {
+  display: block;
+  font-weight: bold;
+  padding: .7em;
+  text-align: center;
+  background: #fff; /*背景色*/
+  color: #b94047; /*文字色*/
+  transition: .3s;
+  font-size: 20pt;
+}
+/***マウスオーバー時***/
+#page-top:hover {
+  background: rgba(247,235,152); /*背景色*/
+  color: #000000; /*文字色*/
+}
+/***トップへ戻るボタンここまで***/
+
+/***スライド***/
+.x-scroll {
+  width: 100%;
+  overflow: hidden;
+}
+.x-scroll_inner {
+  display: flex;
+  animation: 35s linear infinite xScroll;
+}
+@keyframes xScroll {
+  0%     { transform: translateX(0);}
+  100% { transform: translateX(-3850px);} /* .x-scroll_block 1つ分の幅だけ動かす */
+}
+.x-scroll_block {
+  display: flex;
+  width: 3850px; /* (320px + 20px) × 5 */
+}
+.x-scroll_item {
+  width: 750px;
+  height: 450px;
+  margin: 10px;
+}
+
+/***スライドここまで***/
+       
+      @keyframes slide-in-anim {
+        0% {
+          opacity: 1;
+        }
+        60% {
+          transform: translateX(20%);
+        }
+        75% {
+          transform: translateX(-40%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(60%);
+        }
+      }
+      

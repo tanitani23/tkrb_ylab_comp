@@ -1,0 +1,278 @@
+  h1 {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 1.5rem 2rem;
+    border-radius: 30px;
+    background: rgba(196, 22, 22, 0.607);
+  }
+  
+  h1:before,
+  h1:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    background: rgba(196, 22, 22, 0.607);
+  }
+  
+  h1:before {
+    bottom: -15px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  h1:after {
+    bottom: -30px;
+    left: 50px;
+    width: 15px;
+    height: 15px;
+  }
+
+  h1{
+    text-align: center
+  }
+
+  ul, ol {
+    color: #b84844; 
+    border: double 5px #8b1708;/*二重線 太さ 色*/
+    background: #f0938a; 
+    padding: 0.5em 0.5em 0.5em 2em;
+  }
+  
+  ul li, ol li {
+    line-height: 2;
+    padding: 10em 10;
+  }
+   
+
+h2 {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 1.5rem 2rem;
+    border-radius: 30px;
+    background: mistyrose;
+  }
+  
+  h2:before,
+  h2:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    background: mistyrose;
+  }
+
+  .no4 {
+    line-height: 1.0;
+    
+  }
+
+ 
+
+  #cards {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 400px;
+    height: 600px;
+    border: 3px solid rgb(229, 97, 97);
+  }
+  
+  .card:nth-child(2) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .picture img {
+    width: 395px;
+    height: 595px;
+  }
+  
+  .description {
+    width: 100%;
+    height: 350px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    
+  }
+  
+  .description p {
+    font-size: 23px;
+    color: rgb(241, 114, 114);
+    
+  }
+  
+  .heading04 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	text-align: center;
+}
+
+.heading04::before,
+.heading04::after {
+	content: '';
+	width: 3px;
+	height: 40px;
+	background-color: #d76e64;
+}
+
+.heading04::before {
+	margin-right: 30px;
+	transform: rotate(-35deg)
+}
+.heading04::after {
+	margin-left: 30px;
+	transform: rotate(35deg)
+}
+
+
+h5 {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 1.5rem 2rem;
+    border-radius: 30px;
+    background: rgba(223, 63, 63, 0.607);
+  }
+  
+  h5:before,
+  h5:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    background: rgba(241, 114, 114, 0.607);
+  }
+
+  h4{
+    color:#8b1708
+  }
+  
+  h3{
+    text-align: center
+  }
+  p{
+    text-align: center
+  }
+
+  @import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  .btn,
+  h6.btn,
+  button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+  }
+  
+  h6.btn-3d-circle {
+    display: block;
+  
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0;
+  
+    border-radius: 50%;
+  }
+  
+  .btn-3d-circle-content {
+    display: block;
+    line-height: 100px;
+  
+    width: 100px;
+    height: 100px;
+  
+    -webkit-transition: all 0.6s;
+  
+    transition: all 0.6s;
+  
+    border-radius: 50%;
+    background: #f2f5f6;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#f2f5f6),
+      color-stop(37%, #e3eaed),
+      to(#c8d7dc)
+    );
+    background: -webkit-linear-gradient(
+      top,
+      #f2f5f6 0%,
+      #e3eaed 37%,
+      #c8d7dc 100%
+    );
+    background: linear-gradient(to bottom, #a8443b 0%, #d0645c 37%, #a14c4a 100%);
+  
+    -webkit-transform-style: preserve-3d;
+  
+    transform-style: preserve-3d;
+    -webkit-perspective: 150px;
+    perspective: 150px;
+  }
+  
+  .btn-3d-circle:hover .btn-3d-circle-content {
+    -webkit-transform: rotateY(0.5turn) rotateX(-0.03turn);
+    transform: rotateY(0.5turn) rotateX(-0.03turn);
+  }
+  
+  .btn-3d-circle:hover .btn-3d-circle-front {
+    opacity: 0;
+  }
+  
+  .btn-3d-circle:hover .btn-3d-circle-back {
+    top: calc(50% - 2rem);
+    left: calc(50% - 0.75rem);
+  
+    opacity: 1;
+  }
+  
+  .btn-3d-circle-back {
+    font-size: 3rem;
+  
+    position: absolute;
+    top: 70%;
+    left: 70%;
+  
+    -webkit-transition: all 0.3s;
+  
+    transition: all 0.3s;
+    letter-spacing: 0;
+  
+    opacity: 0;
+  }
+
+  
